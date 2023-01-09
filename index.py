@@ -19,7 +19,7 @@ Najlepszy serwer minecraft ---> FanthPlay.pl
 𝒜𝒞𝒯𝐼𝒱𝐸-𝒟𝐸𝒱 𝐵𝒜𝒟𝒢𝐸 𝐵𝒴 𝒲𝒪𝐿𝐹𝐼
 """
 print(logo + inspect.cleandoc(f"""
-    Hej, witamy w bocie do zdobycia aktywnej odznaki dewelopera discord!
+    Hej, Witam w programie, który umożliwia zdobycie aktywnej odznaki dewelopera discord!
     Wpisz poniżej token swojego bota, aby kontynuować.
 
     {Style.DIM}Nie zamykaj tej aplikacji po wprowadzeniu tokena
@@ -86,20 +86,22 @@ async def on_ready():
 
 
 @client.tree.command()
-async def witaj(interaction: Interaction):
+async def odznaka(interaction: Interaction):
     """ Przywitanie czy coś. """
-    print(f"> {Style.BRIGHT}{interaction.user}{Style.RESET_ALL} użył komendy /witaj.")
+    print(f"> {Style.BRIGHT}{interaction.user}{Style.RESET_ALL} użył komendy /odznaka.")
 
     await interaction.response.send_message(inspect.cleandoc(f"""
-        No siema **{interaction.user}**, dziękuję za przywitanie się ze mną!
+        No siema **{interaction.user}!**
 
-        > __**Pewnie zastanawiasz się, gdzie moja odznaka?**__
-        > Uprawnienia do odznaki są sprawdzane przez Discord w odstępach czasu,
+        > __**Pewnie zastanawiasz się, twoja moja odznaka?**__
+        > Odznaka zostanie nadana tobie do 24h, od momentu wpisania
+        > tej komendy, musi minąć minimum 24h, ja np. czekałem 3dni, ale no
         > w tej chwili 24 godziny to zalecany czas oczekiwania przed kolejną próbą wpisania komendy.
 
-        > __**Minęły 24 godziny, jak teraz zdobyć odznakę?**__
+        > __**Minęły 24 godziny, nadal nie mam odznaki.**__
         > Jeśli minęły już 24 godziny, możesz udać się do
-        > https://discord.com/developers/active-developer i wypełnij tam "formularz".
+        > https://discord.com/developers/active-developer i wypełnić tam "formularz".
+        > Jeśli nadal ci się nie pokazał to ponów komendę. (Najlepiej jak znajomy ją też wpiszę)
 
         > __**Aktualizacje odznaki Aktywnego Dewelopera**__
         > Aktualizacje dotyczące odznaki Active Developer można znaleźć na
