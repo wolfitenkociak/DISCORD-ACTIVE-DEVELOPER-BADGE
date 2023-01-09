@@ -1,4 +1,4 @@
-## Discord Active-Developer BADGE Bot
+## Discord Active-Developer BADGE
 
 Aby uruchomić skrypt, wpisz swój token bota (możesz go znaleźć w panelu dewelopera Discorda) podczas uruchamiania skryptu. <br>
 Token może być również zapisany w pliku config.json, aby nie być pytanym o niego podczas kolejnych uruchomień.<br>
