@@ -84,10 +84,9 @@ async def on_ready():
         {Fore.LIGHTBLUE_EX}https://discord.com/api/oauth2/authorize?client_id={client.user.id}&scope=applications.commands%20bot{Fore.RESET}
     """), end="\n\n")
 
-
 @client.tree.command()
 async def odznaka(interaction: Interaction):
-    """ Przywitanie czy coś. """
+    """ Wpisz aby odebrać odznake! """
     print(f"> {Style.BRIGHT}{interaction.user}{Style.RESET_ALL} użył komendy /odznaka.")
 
     await interaction.response.send_message(inspect.cleandoc(f"""
