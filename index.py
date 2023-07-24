@@ -15,8 +15,7 @@ except ImportError:
     )
 
 logo = f"""
-Najlepszy serwer minecraft ---> FanthPlay.pl
-𝒜𝒞𝒯𝐼𝒱𝐸-𝒟𝐸𝒱 𝐵𝒜𝒟𝒢𝐸 𝐵𝒴 𝒲𝒪𝐿𝐹𝐼
+𝒜𝒞𝒯𝐼𝒱𝐸-𝒟𝐸𝒱 𝐵𝒜𝒟𝒢𝐸
 """
 print(logo + inspect.cleandoc(f"""
     Hej, Witam w programie, który umożliwia zdobycie aktywnej odznaki dewelopera discord!
@@ -105,8 +104,6 @@ async def odznaka(interaction: Interaction):
         > __**Aktualizacje odznaki Aktywnego Dewelopera**__
         > Aktualizacje dotyczące odznaki Active Developer można znaleźć na
         > Serwerze Discord dla deweloperów https://discord.gg/discord-developers na kanale #active-dev-badge
-
-        > Btw, zapraszam cie na najlepszy serwer minecraft - https://dc.fanthplay.pl >:)
     """))
 
 client.run(token)
