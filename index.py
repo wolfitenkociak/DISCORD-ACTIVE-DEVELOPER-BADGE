@@ -91,7 +91,7 @@ async def odznaka(interaction: Interaction):
     await interaction.response.send_message(inspect.cleandoc(f"""
         No siema **{interaction.user}!**
 
-        > __**Pewnie zastanawiasz się, twoja moja odznaka?**__
+        > __**Pewnie zastanawiasz się, gdzie moja odznaka?**__
         > Odznaka zostanie nadana tobie do 24h, od momentu wpisania
         > tej komendy, musi minąć minimum 24h, ja np. czekałem 3dni, ale no
         > w tej chwili 24 godziny to zalecany czas oczekiwania przed kolejną próbą wpisania komendy.
